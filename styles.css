@@ -1,0 +1,655 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body{
+    margin:0  0 55px 0;
+    padding: 0;
+    font-family: Roboto , Arial;
+    background-color: rgb(255, 255, 255);
+    
+
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(152, 0, 182);
+}
+.humburger,
+.back{
+    display: flex;
+    flex: 1;
+    margin-left: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+
+.ama{
+    display: flex;
+    
+
+}
+.retry{
+    display: flex;
+    margin-right: 10px;
+    margin-left: 5px;
+    font-size: 20px;
+}
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    height: 180px;
+    margin-top: 10px;
+    border-radius: 3px;
+    margin-left: 8%;
+    color: white;
+    background-color: rgb(88, 85, 85);
+    box-shadow: 3px 3px 3px rgb(146, 146, 146),-3px  -3px 3px rgb(146 , 146, 146);
+}
+.world-map{
+    position: absolute;
+    width: 90%;
+    height: 190px;
+    top: 35px;
+    left: 35px;
+    color: gray;
+}
+.logo{
+    display: inline-block;
+    position: absolute;
+    top: 45px;
+    left: 45px;
+    color: rgb(255, 255, 255);
+    z-index: 100;
+}
+.cbe{
+    position: absolute;
+    text-wrap: nowrap;
+    font-weight: 700;
+    font-size: 12px;
+    margin-left: 30px;
+    color: rgb(221, 193, 35);
+    top: 50px;
+    left: 80px;
+    z-index: 100;
+}
+.moto{
+    position: absolute;
+    text-wrap: nowrap;
+    color: rgba(247, 224, 94, 0.815);
+    font-weight: 300;
+    font-size: 10px;
+    top: 64px;
+    left: 110px;
+    font-family: monospace;
+    z-index: 100;
+}
+.balance{
+    color: white;
+    position: absolute;
+    top: 85px;
+    left:150px ;
+    font-weight: 300;
+    z-index: 100;
+}
+.brr{
+    position: absolute;
+    font-weight: bold;
+    font-size: 25px;
+    top: 110px;
+    left: 130px;
+    color: rgb(228, 228, 228);
+    vertical-align: center;
+    z-index: 100;
+}
+.eye,
+.hide-money-icon{
+    position: absolute;
+    top: 114px;
+    left: 230px;
+    color: rgb(235, 235, 235);
+    z-index: 100;
+    
+}
+.hide-money-icon{
+    color: rgb(255, 255, 255);
+    left: 250px;
+    top: 116px;
+
+}
+.account{
+  color: rgba(247, 224, 94, 0.815);
+  font-size: 14px;
+  position: absolute;
+  top: 135px;
+  left:130px;
+  z-index: 100;
+}
+.date{
+    font-size: 10px;
+    position: absolute;
+    top: 150px;
+    left: 140px;
+    z-index: 100;
+}
+img{
+    width: 50px;
+}
+.circle{
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    background-color: limegreen;
+    left: 180px;
+    margin-top: 13px;
+    border-radius: 4px;
+    
+}
+.services{
+    position: absolute;
+    font-size: 12px;
+    left: 160px;
+    top: 245px;
+}
+.cards-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 4;
+    margin-top: 45px;
+    margin-left: 30px;
+    row-gap: 10px;
+
+}
+.cards{
+    background-color: rgb(247, 247, 247);
+    width: 150px;
+    height: 90px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgb(224, 224, 224),-3px -3px 5px rgb(224 , 224 , 224);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.icons{
+    color: rgb(152, 0, 182);
+    font-size: 27px;
+}
+
+.qr-btn{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(152, 0, 182);
+    position: fixed;
+    right: 30px;
+    bottom: 60px;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(152, 0, 182);
+    z-index: 101;
+}
+.qr{
+    font-size: 30px;
+}
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(152, 0, 182);
+    margin-top: 30px;
+    padding-left:7px;
+    padding-right: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+}
+.home{
+    margin-left: 20px;
+}
+.home-txt{
+    font-size: 13px;
+    position: fixed;
+    left: 15px;
+    bottom: 3px;
+}
+.try{
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.transactoin{
+    width: 340px;
+    height: 280px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    position:fixed;
+    top: 32%;
+    left:7%;
+    border-radius: 5px;
+    padding: 0;
+    z-index: 201;
+
+}
+.thanks{
+    display: flex;
+    justify-content: space-between;
+    align-items:start;
+    width: 100%;
+    height: 30%;
+    background-color: rgba(121, 189, 58, 0.829);
+    position: absolute;
+    padding: 0;
+    border-radius: 5px 5px 0px 0px;
+}
+.msg{
+    color: black;
+    position: absolute;
+    top:33% ;
+    left: 5%;
+    font-size: 13px;
+    color: gray;
+    display: block;
+}
+.etb{
+    display: block;
+    position: absolute;
+    top: 41%;
+    font-size: 13px;
+    left: 5%;
+    font-weight: bold;
+
+}
+.commercial{
+    width: 95%;
+    height: 25%;
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+    right: 5px;
+    background-color: rgb(243, 243, 243);
+    border-radius: 5px;
+}
+.cbe-image{
+    position: absolute;
+    top: 5px;
+}
+.bank{
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 65px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.rely{
+    display: block;
+    position: absolute;
+    top: 28px;
+    left: 65px;
+    font-size: 11px;
+    color: gray;
+}
+.money-history,
+.receiver-name{
+    display: inline-block;
+    margin-left: 3px;
+    
+}
+.download,
+.share{
+    color: white;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-left: 10px;
+    padding-left: 10px;
+
+    
+}
+.cancel{
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    position: absolute;
+    top: 18px;
+    right: 16px;
+    
+}
+
+
+
+
+
+
+.shaddow{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(80, 79, 79,0.65);
+    z-index: 200;
+}
+
+.right-side{
+
+    display: flex;
+    flex: 1;
+
+}
+.left-side{
+    display: flex;
+    flex: 1;
+
+}
+.shield{
+    color: white;
+    font-size: 28px;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+.thank{
+    color: white;
+    font-weight: bold;
+    text-wrap: nowrap;
+    position: absolute;
+    top: 20px;
+    left: 45px;
+}
+.success{
+    color: white;
+    position: absolute;
+    top: 35px;
+    left: 45px;
+    font-size: 12px;
+}
+
+
+.loading-txt{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 25px;
+    position: fixed;
+    top: 60%;
+    right: 35%;
+    z-index: 201;
+    
+}
+
+/* loader animation start.................... */
+.loader {
+    color: #f1e31f;
+    font-size: 70px;
+    text-indent: -9999em;
+    overflow: hidden;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    position: fixed;
+    top: 40%;
+    right: 40%;
+    z-index: 500;
+
+
+    transform: translateZ(0);
+    animation: mltShdSpin 1.5s infinite ease, round 1.5s infinite ease;
+  }
+  
+  @keyframes mltShdSpin {
+    0% {
+      box-shadow: 0 -0.83em 0 -0.4em,
+      0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
+      0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    5%,
+    95% {
+      box-shadow: 0 -0.83em 0 -0.4em, 
+      0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 
+      0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+    10%,
+    59% {
+      box-shadow: 0 -0.83em 0 -0.4em, 
+      -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, 
+      -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
+    }
+    20% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em,
+       -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, 
+       -0.749em -0.34em 0 -0.477em;
+    }
+    38% {
+      box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em,
+       -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, 
+       -0.82em -0.09em 0 -0.477em;
+    }
+    100% {
+      box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 
+      0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
+    }
+  }
+  
+  @keyframes round {
+    0% { transform: rotate(0deg) }
+    100% { transform: rotate(360deg) }
+  }
+   
+
+  /* loader animation end.................. */
+
+
+  /* sidebar  */
+
+.sidebar{
+    position: fixed;
+    top:0;
+    width: 72%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 200;
+}
+.upper{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 20%;
+    
+    background-color: rgb(152, 0, 182);
+}
+.upper-logo{
+    width: 80px;
+    position: fixed;
+    top: 40px;
+    z-index: 1;
+}
+.upper-commercial{
+    position: fixed;
+    top: 55px;
+    left: 40px;
+}
+.upper-moto{
+    position: fixed;
+    top: 70px;
+    left: 70px;
+    font-size: 9px;
+
+}
+.upper-map{
+    position: relative;
+    top: -40px;
+    width:100% ;
+}
+
+
+.lower{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+.side-icon{
+    margin-right: 10px;
+}
+
+.toggle-icon{
+   margin-left: 90px;
+   color: rgb(87, 86, 86); 
+}
+
+  /* sidebar end */
+
+
+
+  /* transaction history beggin  */
+
+.history{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgb(253, 253, 253);
+    z-index: 100;
+
+}
+.recent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.recent p{
+    color: rgb(152, 0, 182);
+}
+.withdrawal-box,
+.withdrawal-box-others{
+    display: flex;
+    width: 85%;
+    height: 70px ;
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+    margin-top: 10px;
+    box-shadow: 1px 1px 2px rgb(211, 211 , 211) , -1px -1px 2px rgb(211, 211, 211);
+}
+.left-box{
+    display: flex;
+    flex: 1;
+}
+.left-icon{
+    display: inline-block;
+    position: relative;
+    margin-right: 25px;
+    margin-right: 5px;
+    top: 25px;
+    left: 5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 10px;
+    color: rgb(219, 219, 219);
+    z-index: 1;
+}
+.red{
+    width: 13px;
+    height: 12px;
+    background-color: red;
+    position:relative;
+    top: 27px;
+    left: -7px;
+    border-radius: 50px;
+}
+.left-withdrawal{
+    display: inline-block;
+    position: relative;
+    top: 15px;
+    left:10px;
+    color: rgb(152, 0, 182);
+}
+.left-date{
+    display: block;
+    position: relative;
+    top:35px ;
+    left: -65px;
+    font-size: 12px;
+    color: gray;
+}
+.right-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 7px;
+}
+.right-brr{
+    color: rgb(152, 0, 182);
+}
+.mob{
+    color: gray;
+    font-size: 11px;
+}
+
+.down-history{
+    position: fixed;
+    bottom: 0;
+    height: 30%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+   
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    z-index: 300;
+}
+.down-history div{
+    margin-top: 13px;
+}
+.cancel-transaction{
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(78, 78, 78);
+    position: absolute;
+    right: 30px;
+    top: 15px;
+}
+.down-history div{
+    color: rgb(63, 62, 62);
+}
+.down-history span{
+    font-weight: bold;
+    color: black;
+}
+.day{
+    position: absolute;
+    top: 19px;
+    font-size: 13px;
+}
+.recent-shaddow{
+    z-index: 200;
+}
+.transfer-to{
+    position: absolute;
+    top: 151px;
+}
+.amount-transferred{
+    position: absolute;
+    top: 180px;
+}
+/* transaction history end  */
+
+
+.hidden{
+    display: none;
+}
