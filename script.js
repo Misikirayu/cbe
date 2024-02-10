@@ -1,9 +1,6 @@
 'use strict'
 
 var Sendername = 'YIDENEKU ABEBE ABUYE';
-var recieverName = prompt('enter receiver name').toUpperCase();
-var  transactionAmount = prompt("Enter Amount");
-var transactionReason = prompt("Enter Reason").toLowerCase();
 const cancelBtn = document.querySelector('.cancel');
 const transactionBox = document.querySelector('.transactoin');
 const qrBtn = document.querySelector('.qr-btn');
@@ -24,8 +21,20 @@ const lowerFooter = document.querySelector('.footer-class');
 const backBtn = document.querySelector('.back');
 const showHistoryBtn = document.querySelector('.try');
 const historyPage = document.querySelector('.history');
+const openTransferBox = document.querySelector('.transfer-money');
+const transferSection = document.querySelector('.transfer-section');
+const backToHome = document.querySelector('.transfer-section-back');
+const startTransaction = document.querySelector('.transaction-start-box');
+const selectTransaction = document.querySelector('.select-section');
+const backToTransfer = document.querySelector('.back-to-transfer');
+const openInputBox = document.querySelector('.saving-box');
+const inputSection = document.querySelector('.send-input-section');
+const backToSelect = document.querySelector('.back-to-select');
+const paymentDetails = document.querySelector('.payment-details');
+const backToInput = document.querySelector('.back-to-input-section');
+const takeAccValue = document.querySelector('.continue-acc-btn');
 
-/////////////////////////////////////////////////////////////////////////////////////////////
+// /////////////////////////////////////////////////////////////////////////////////////////////
 var dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 var now = new Date();
 var theDay = now.getDay();
@@ -51,15 +60,43 @@ var currentMinute = minuteObj.getMinutes();
 var secondObj = new Date();
 var currentSecond = secondObj.getSeconds();
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-document.querySelector(".left-current-date").textContent = `${currentMonth} ${currentDate},${currentYear}`;
-document.querySelector(".left-current-birr").textContent =`${transactionAmount}.00 Br.`;
-document.querySelector(".day").textContent = `${currentMonth} ${currentDate},${currentYear}`;
-document.querySelector('.money-history').textContent = ` ${transactionAmount}.00 Br.`;
-document.querySelector(".receiver-name").textContent = `${recieverName}`;
 document.querySelector('.date').textContent = `${currentMonth} ${currentDate}, ${currentYear} ${currentHour}:${currentMinute}:${currentSecond} am`
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+openTransferBox.addEventListener('click',()=>{
+    transferSection.classList.remove('hidden');
+})
+
+
+function homeOpener(){
+  transferSection.classList.add('hidden');
+}
+
+backToHome.addEventListener('click',homeOpener);
+
+startTransaction.addEventListener("click",()=>{
+    selectTransaction.classList.remove('hidden');
+})
+backToTransfer.addEventListener('click',()=>{
+    selectTransaction.classList.add('hidden');
+})
+openInputBox.addEventListener('click',()=>{
+    inputSection.classList.remove('hidden');
+})
+backToSelect.addEventListener('click',()=>{
+    inputSection.classList.add('hidden');
+})
+backToInput.addEventListener('click',
+function(){
+   paymentDetails.classList.add('hidden'); 
+})
+
+takeAccValue.addEventListener('click',
+ function(){
+    paymentDetails.classList.remove('hidden');
+
+ })
 
 
 function showLoader() {
@@ -69,6 +106,20 @@ function showLoader() {
 
     // Hide the loader and show the text after 3 seconds
     setTimeout(function() {
+
+        var recieverName = document.querySelector('.account-number').value.toUpperCase();
+        var transactionAmount = document.querySelector('.amount').value;
+        var transactionReason = document.querySelector('.reason').value.toLowerCase();
+       
+        document.querySelector(".left-current-date").textContent = `${currentMonth} ${currentDate},${currentYear}`;
+        document.querySelector(".receiver-name").textContent = `${recieverName}`;
+        document.querySelector(".day").textContent = `${currentMonth} ${currentDate},${currentYear}`;
+        document.querySelector(".left-current-birr").textContent =`${transactionAmount}.00 Br.`;
+        document.querySelector('.money-history').textContent = ` ${transactionAmount}.00 Br.`;
+       
+        
+        
+
       loader.style.display = 'none';
       transactionBox.classList.remove('hidden');
       loadingTxt.classList.add('hidden');
@@ -137,7 +188,6 @@ backBtn.addEventListener('click',()=>{
 showHistoryBtn.addEventListener('click',()=>{
   historyPage.classList.remove('hidden');
 })
-
 
 
 
