@@ -20,7 +20,11 @@ nav{
     color: rgb(152, 0, 182);
 }
 .humburger,
-.back{
+.back,
+.transfer-section-back,
+.back-to-transfer,
+.back-to-select,
+.back-to-input-section{
     display: flex;
     flex: 1;
     margin-left: 15px;
@@ -50,7 +54,7 @@ nav{
     border-radius: 3px;
     margin-left: 8%;
     color: white;
-    background-color: rgb(88, 85, 85);
+    background-color: rgb(41, 41, 41);
     box-shadow: 3px 3px 3px rgb(146, 146, 146),-3px  -3px 3px rgb(146 , 146, 146);
 }
 .world-map{
@@ -244,7 +248,7 @@ footer{
     left:7%;
     border-radius: 5px;
     padding: 0;
-    z-index: 201;
+    z-index: 500;
 
 }
 .thanks{
@@ -343,7 +347,7 @@ footer{
     width: 100%;
     height: 100%;
     background-color: rgba(80, 79, 79,0.65);
-    z-index: 200;
+    z-index: 450;
 }
 
 .right-side{
@@ -450,8 +454,6 @@ footer{
   }
    
 
-  /* loader animation end.................. */
-
 
   /* sidebar  */
 
@@ -461,7 +463,7 @@ footer{
     width: 72%;
     height: 100%;
     background-color: rgb(255, 255, 255);
-    z-index: 200;
+    z-index: 500;
 }
 .upper{
     position: relative;
@@ -649,6 +651,206 @@ footer{
 }
 /* transaction history end  */
 
+
+/* transfer section styling */
+.transfer-section{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgb(248, 248, 248);
+    z-index: 300;
+}
+.transfer-section-nav{
+    background-color: rgb(248, 248, 248);
+}
+.transfer-paragraph,
+.select-paragraph{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.transfer-section-footer{
+    background-color: rgb(248, 248, 248);
+    width: 100%;
+    height: 5%;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid gray;
+
+}
+.transaction-box{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 2px;
+    
+}
+.icons-transfer{
+    position: relative;
+    top: 19px;
+    left: 10px;
+    
+}
+.main-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    margin-top: -9px;
+    border-bottom: 2px gray solid;
+   
+}
+
+.transfer-main-top{
+    color: rgb(61, 31, 87);
+}
+.transfer-main-bottom{
+    color: gray;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+.greaterthan{
+    display: flex;
+    justify-content: end;
+    margin-right: 19px;
+    margin-top: -52px;
+    color: gray;
+    font-size: 30px;
+}
+
+
+
+/* select section */
+.select-section{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    z-index: 300;
+    
+}
+
+.saving-box{
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    margin-top: 40px;
+}
+.building{
+    width: 20%;
+    height: 100%;
+    border-bottom: none;
+    background-color: rgb(255, 255, 255);
+}
+.building-icon{
+    margin-top: 30%;
+    margin-left: 28%;
+
+}
+.saving-etb{
+    display: flex;
+    flex: 1;
+    height: 100%;
+    background-color: #ffffff;
+    border-bottom: gray 1px solid;
+    box-shadow: 1px 1px 1px rgb(211, 211 , 211),-1px -1px 1px rgb(211, 211 , 211);
+}
+
+.saving-and-balance{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10%;
+}
+
+.greater{
+    position: absolute;
+    right: 20px;
+    top: 14%;
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(152, 0, 182);
+
+}
+.saving{
+    color: rgb(152, 0, 182);
+    font-weight: bold;
+}
+.balance-etb{
+    font-size: 13px;
+    color: gray;
+}
+/* send money input section  */
+.send-input-section{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgb(255, 251, 251);
+    z-index: 400;
+
+}
+.input-acc-no,
+.input-reason-and-amount{
+    margin-left: 25px;
+    margin-top: 50px;
+    display: block;
+}
+.input-reason-and-amount .dash{
+    top: 24px;
+}
+.account-number,
+.amount,
+.reason{
+    width: 90%;
+    height: 50px;
+    border: 3px solid rgb(152, 0, 182);
+    border-radius: 3px;
+    font-size: 17px;
+    padding-left: 5px;
+    outline: none;
+}
+.amount{
+    margin-bottom: 10px;
+}
+.dash{
+    width: 93%;
+    height: 1px;
+    position: relative;
+    top: 10px;
+    background-color: rgb(165, 165, 165);
+}
+.continue-acc-btn {
+    position: relative;
+    top: 20px;
+}
+.continue-acc-btn button,
+.continue-send-btn button{
+    width: 87%;
+    height: 50px;
+    margin-left: 25px;
+    color: white;
+    background-color: rgb(228, 14, 163);
+    border: 1px solid  rgb(228, 14, 163);
+    font-size: 17px;
+}
+.continue-send-btn button{
+    margin-top: 35px;
+}
+
+
+/* payment details section  */
+
+.payment-details{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgb(255, 251, 251);
+    z-index: 400;
+}
 
 .hidden{
     display: none;
