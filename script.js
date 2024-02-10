@@ -132,6 +132,11 @@ function showLoader() {
     function(){
         transactionBox.classList.add('hidden');
         shaddowBox.classList.add('hidden');
+
+        transferSection.classList.add('hidden');
+        selectTransaction.classList.add('hidden');
+        inputSection.classList.add('hidden');
+        paymentDetails.classList.add("hidden");
     });
   
 showSidebar.addEventListener('click',
