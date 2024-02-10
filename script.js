@@ -1,10 +1,5 @@
 'use strict'
-window.addEventListener("load",function() {
-    setTimeout(function(){
-        // This hides the address bar:
-        window.scrollTo(0, 1);
-    }, 0);
-});
+
 var Sendername = 'YIDENEKU ABEBE ABUYE';
 const cancelBtn = document.querySelector('.cancel');
 const transactionBox = document.querySelector('.transactoin');
