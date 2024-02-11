@@ -123,7 +123,7 @@ function showLoader() {
       loader.style.display = 'none';
       transactionBox.classList.remove('hidden');
       loadingTxt.classList.add('hidden');
-      moneyTransaction.textContent = ` ETB ${transactionAmount}.00 debited from ${Sendername} for ${recieverName}-ETB-0938 (${transactionReason} done via Mobile) on 0${currentDate} - ${currentMonth} - ${currentYear} with transactoin ID:FT24024YG901.`;
+      moneyTransaction.textContent = ` ETB ${transactionAmount}.00 debited from ${Sendername} for ${recieverName}-ETB-0938 (${transactionReason} done via Mobile) on ${currentDate} - ${currentMonth} - ${currentYear} with transactoin ID:FT24024YG901.`;
       
     }, 3500);
   }
