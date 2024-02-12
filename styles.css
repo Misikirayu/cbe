@@ -239,33 +239,70 @@ footer{
 }
 
 .transactoin{
-    width: 340px;
-    height: 280px;
+    width: 350px;
+    height: 570px;
     background-color: rgb(255, 255, 255);
     border: none;
     position:fixed;
-    top: 32%;
-    left:7%;
+    top: 16%;
+    left:6%;
     border-radius: 5px;
     padding: 0;
     z-index: 500;
 
+}
+.qr-code{
+    position: fixed;
+    top: 330px;
+    left: 22%;
+    box-shadow: 0px 3px 3px rgb(151, 151, 151);
+    border-radius: 5px;
+}
+.qr-image{
+    width: 230px;
+    height: 230px;
+}
+.cbe-image-center{
+    position: fixed;
+    left: 166px;
+    top: 420px;
+    width: 70px;
+}
+.pdf-btn{
+    position: fixed;
+    top:575px;
+    left: 124px;
+    width: 153px;
+    height: 35px;
+    border: 1px #bb8d4f solid;
+    text-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bb8d4f;
+    border-radius: 75px;
+    color: black;
+    box-shadow: 0px 3px 7px rgb(141, 141, 141);
+}
+.paper{
+    display: flex;
+    justify-content: left;
+    margin-right: 10px;
 }
 .thanks{
     display: flex;
     justify-content: space-between;
     align-items:start;
     width: 100%;
-    height: 30%;
-    background-color: rgba(121, 189, 58, 0.829);
+    height: 15%;
+    background-color: #9ccc68;
     position: absolute;
     padding: 0;
     border-radius: 5px 5px 0px 0px;
 }
 .msg{
-    color: black;
     position: absolute;
-    top:33% ;
+    top:17% ;
     left: 5%;
     font-size: 13px;
     color: gray;
@@ -274,7 +311,7 @@ footer{
 .etb{
     display: block;
     position: absolute;
-    top: 41%;
+    top: 21%;
     font-size: 13px;
     left: 5%;
     font-weight: bold;
@@ -282,10 +319,10 @@ footer{
 }
 .commercial{
     width: 95%;
-    height: 25%;
+    height: 10%;
     position: absolute;
-    bottom: 10px;
-    left: 5px;
+    bottom: 15px;
+    left: 9px;
     right: 5px;
     background-color: rgb(243, 243, 243);
     border-radius: 5px;
@@ -335,9 +372,6 @@ footer{
     right: 16px;
     
 }
-
-
-
 
 
 
