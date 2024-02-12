@@ -253,7 +253,7 @@ footer{
 }
 .qr-code{
     position: fixed;
-    top: 330px;
+    top: 300px;
     left: 22%;
     box-shadow: 0px 3px 3px rgb(151, 151, 151);
     border-radius: 5px;
@@ -270,7 +270,7 @@ footer{
 }
 .pdf-btn{
     position: fixed;
-    top:575px;
+    top:550px;
     left: 124px;
     width: 153px;
     height: 35px;
